@@ -1,7 +1,7 @@
 ////// Problem 1  //////
 function totalFine(fare) {
   if (typeof fare !== "number" || fare <= 0) {
-    return "invalid";
+    return "Invalid";
   }
   const fine = fare + fare * (20 / 100) + 30;
   return fine;
@@ -12,7 +12,7 @@ function totalFine(fare) {
 
 function onlyCharacter(str) {
   if (typeof str !== "string") {
-    return "invalid";
+    return "Invalid";
   }
   let output = "";
   for (const character of str) {
