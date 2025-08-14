@@ -9,14 +9,14 @@ function onlyCharacter(str) {
   if (typeof str !== "string") {
     return "Invalid";
   }
-  let output = "";
-  for (const character of str) {
-    if (character !== " ") {
-      output = output + character;
-    }
-  }
-  let result = output.toUpperCase();
+  //   let output = "";
+  //   for (const character of str) {
+  //     if (character !== " ") {
+  //       output = output + character;
+  //     }
+  //   }
+  let result = str.split(" ").join("").toUpperCase();
   return result;
 }
 
-console.log(onlyCharacter(true));
+console.log(onlyCharacter("  h e llo wor   ld"));
