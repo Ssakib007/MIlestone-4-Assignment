@@ -7,7 +7,7 @@
 
 function onlyCharacter(str) {
   if (typeof str !== "string") {
-    return "invalid";
+    return "Invalid";
   }
   let output = "";
   for (const character of str) {
